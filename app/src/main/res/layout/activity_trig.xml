@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TrigActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        android:elevation="10dp"
+        android:paddingTop="30dp"
+        app:cardBackgroundColor="@color/first"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="120dp"
+                android:layout_marginRight="120dp"
+                android:layout_marginBottom="120dp"
+                android:text="Trigger "
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:gravity="center_horizontal"
+                android:text="Hold volume up/down button for 5 seconds to send SOS to the registered contacts."
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="50dp"
+
+
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
