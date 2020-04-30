@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorPrimaryDark">#CC0059</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="first">#432967</color>
     <color name="second">#782D65</color>
     <color name="third">#C3305D</color>
     <color name="four">#F0445E</color>
     <color name="five">#FD9367</color>
+    <color name="black">#000000</color>
+    <color name="helplineBG">#FB9EC4</color>
+    <color name="triggersBG">#FFDAC0</color>
+
 </resources>
