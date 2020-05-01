@@ -42,6 +42,7 @@ A message will be sent along with the live location and the family member with t
 - Java
 - SQLite
 - Firebase
+- Google Analytics
 
 </br>
 
