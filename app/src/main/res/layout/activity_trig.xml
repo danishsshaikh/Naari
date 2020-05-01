@@ -32,7 +32,7 @@
                 android:layout_marginEnd="120dp"
                 android:layout_marginRight="120dp"
                 android:layout_marginBottom="120dp"
-                android:text="Trigger "
+                android:text="Activate Trigger "
                 android:textColor="#FFFFFF"
                 android:textSize="30sp" />
 
