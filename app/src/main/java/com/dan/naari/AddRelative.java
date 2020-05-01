@@ -18,13 +18,14 @@ public class AddRelative extends AppCompatActivity {
 
     DatabaseHelper myDB;
     Button btnAdd,btnView;
-    EditText editText;
+    EditText editText, editText2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_relative);
         editText = (EditText) findViewById(R.id.editText);
+        editText2 = (EditText) findViewById(R.id.editText2);
         btnAdd = (Button) findViewById(R.id.btnAdd);
         btnView = (Button) findViewById(R.id.btnView);
         myDB = new DatabaseHelper(this);
@@ -33,8 +34,10 @@ public class AddRelative extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String newEntry = editText.getText().toString();
+                String newEntry1 = editText2.getText().toString();
                 if(editText.length()!= 0){
                     AddData(newEntry);
+                    AddData(newEntry1);
                     editText.setText("");
                 }else{
                     Toast.makeText(AddRelative.this, "You must put something in the text field!", Toast.LENGTH_LONG).show();
