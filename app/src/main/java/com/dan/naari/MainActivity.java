@@ -62,6 +62,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void LogOut(View v){
+        Intent i = new Intent(getApplicationContext(), Login.class);
+        startActivity(i);
+    }
+
 
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {

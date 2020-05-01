@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Splash">
+    tools:context=".Splash"
+    >
 
 
     <ImageView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_centerInParent="true"
         android:id="@+id/imglgo2"
+        android:layout_width="292dp"
+        android:layout_height="331dp"
+        android:layout_centerInParent="true"
         android:src="@drawable/lgo2" />
 
 

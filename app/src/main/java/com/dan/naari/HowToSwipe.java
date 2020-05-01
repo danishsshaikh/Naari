@@ -19,14 +19,14 @@ public class HowToSwipe extends TutorialActivity {
         .setTitle("About Naari Rakshak")
         .setContent("In order to ask for help, you need to add your family and friends mobile number.").setSummary("Step 1")
         .setBackgroundColor(Color.parseColor("#f6acc8"))
-        .setDrawable(R.drawable.danish).build());
+        .setDrawable(R.drawable.swipe1).build());
 
         addFragment(new Step.Builder()
                 .setTitle("How to use in trouble?")
                 .setContent("Just press the volume up/down button for 5 seconds.")
                 .setSummary("Step 2")
                 .setBackgroundColor(Color.parseColor("#af8baf"))
-                .setDrawable(R.drawable.danish).build());
+                .setDrawable(R.drawable.swipe2).build());
 
         addFragment(new Step.Builder()
                 .setTitle("What happens after 5 seconds?")
@@ -34,7 +34,7 @@ public class HowToSwipe extends TutorialActivity {
                 .setSummary("Step 3")
                 .setSummary("This is summary")
                 .setBackgroundColor(Color.parseColor("#584153"))
-                .setDrawable(R.drawable.danish).build());
+                .setDrawable(R.drawable.swipe3).build());
     }
 
 

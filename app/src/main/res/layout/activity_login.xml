@@ -9,39 +9,55 @@
     tools:context=".Login">
 
 
-    <TextView
-        android:id="@+id/textView1"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="3dp"
-        android:textColor="#B89735"
-        android:textStyle="bold|italic"
-        android:gravity="center_horizontal"
-        android:text="WELCOME"
-        android:textSize="35sp" />
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:layout_width="800dp"
+            android:layout_height="90dp"
+            android:src="@drawable/iconname">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold|italic"
+            android:gravity="center_horizontal"
+            android:text="WELCOME"
+            android:textSize="35sp" />
+
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="3dp"
-        android:textColor="#B89735"
+        android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:gravity="center_horizontal"
         android:text="Login Here"
         android:textSize="20sp" />
+
+
 
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="37dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="100dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="3dp"
         android:background="@android:color/background_light"
@@ -73,7 +89,7 @@
         android:layout_marginTop="21dp"
         android:layout_marginRight="130dp"
         android:layout_marginBottom="3dp"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorPrimaryDark"
         android:text="Login"
         android:textColor="#FFFFFF"
         android:textSize="24sp" />
@@ -86,7 +102,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="3dp"
-        android:textColor="#B89735"
+        android:textColor="@color/colorPrimaryDark"
         android:gravity="center_horizontal"
         android:text="New Here? Create Account"
         android:textSize="18sp" />
