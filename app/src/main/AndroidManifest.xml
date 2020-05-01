@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".HowToSwipe"></activity>
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Registration"/>
+        <activity android:name=".Login"/>
+        <activity android:name=".HowToSwipe" />
         <activity android:name=".DeveloperByActivity" />
         <activity android:name=".TrigActivity" />
         <activity android:name=".helplineCall" />
