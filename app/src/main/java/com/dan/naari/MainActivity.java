@@ -4,9 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+
+    int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +50,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
 
+        int action, keycode;
 
+        action = event.getAction();
+        keycode = event.getKeyCode();
+
+        switch (keycode)
+        {
+
+            case KeyEvent.KEYCODE_VOLUME_UP:
+                {
+                if(KeyEvent.ACTION_UP == action){
+                    count++;
+                    String S1 = String.valueOf(count);
+                    Log.d("upButton", S1);
+                }
+            }
+
+            case KeyEvent.KEYCODE_VOLUME_DOWN:
+                if(KeyEvent.ACTION_DOWN == action){
+                    count = 0;
+                    String S2 = String.valueOf(count);
+                    Log.d("downButton", S2);
+                }
+        }
+        return super.dispatchKeyEvent(event);
+    }
 }
