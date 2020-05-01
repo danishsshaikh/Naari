@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".helplineCall"
-    android:background="@color/helplineBG">
+    android:background="#CC0059">
 
 
     <androidx.cardview.widget.CardView
