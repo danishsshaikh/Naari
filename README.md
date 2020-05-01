@@ -1,4 +1,4 @@
-<h1 align ="center"> Naari </h1>
+<h1 align ="center"> :information_desk_person: Naari :ok_woman: </h1>
 
 ![Image](https://github.com/danishsshaikh/Naari/blob/master/app/src/main/res/drawable/github.png)
 
@@ -7,19 +7,19 @@ The app is about safety/awareness & makes the user safe & confident.
 It is easy to use because of it's user friendly UI.
 
 
-## Sailent Features:
+## :iphone: Sailent Features:
 
-### Trigger Button -
+### :telephone_receiver: Trigger Button -
 Press the volume up/down button for 5 seconds, this will send a message along with the location and a call to the registered mobile numbers.
 
-### Helpline Numbers - 
+### :telephone: Helpline Numbers - 
 One-click access to helpline numbers like Women in distress, Domestic abuse, Police, student/child helpline, Ambulance.
 
-## Event:
+## :hourglass: Event:
 A project based on the Problem Statement given by Hack4Good. 
 A college based Hackathon.
 
-# How to use:
+# :calling: How to use:
 #### Step-1 :
 Register to your account using your mobile number.
 #### Step-2 :
@@ -28,15 +28,15 @@ Add your family & friends mobile number.
 When in emergency, hold the volume up/down button for 5 seconds.
 A message will be sent along with the live location and the family member with the first preference will receive a call.
 
-## Technologies Used
+## 📊 Technologies Used
 - Java
 - SQLite
 - Firebase
 
-## Tools
+## 💯 Tools
 - Android Studio
 
-## Members
+## :star2: Members
 - [Aryan Veturekar](https://aryanveturekar.github.io/)
 - [Himanshu Singh](https://himanshusiingh.github.io/)
 - [Danish Shaikh](https://danishsshaikh.github.io/)
