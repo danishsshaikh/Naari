@@ -1,61 +1,67 @@
 package com.dan.naari;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
+import android.database.sqlite.SQLiteOpenHelper;
+//import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListView;
+import android.widget.Toast;
 
-import java.util.ArrayList;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Arrays;
+import java.util.regex.Pattern;
 
 public class AddRelative extends AppCompatActivity {
 
-    EditText et1;
-    EditText et2;
-    Button bt;
-    ArrayList<String> arrayList;
-    ArrayAdapter<String> adapter;
-    ListView lv;
+    DatabaseHelper myDB;
+    Button btnAdd,btnView;
+    EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_relative);
+        editText = (EditText) findViewById(R.id.editText);
+        btnAdd = (Button) findViewById(R.id.btnAdd);
+        btnView = (Button) findViewById(R.id.btnView);
+        myDB = new DatabaseHelper(this);
 
-        et1 = (EditText) findViewById(R.id.editText2);
-        et2 = (EditText) findViewById(R.id.editText3);
-        bt = (Button) findViewById(R.id.button);
-        lv = (ListView) findViewById(R.id.listView);
-
-        arrayList = new ArrayList<String>();
-        adapter = new ArrayAdapter<String>(AddRelative.this,
-                android.R.layout.simple_list_item_1, arrayList);
-        // Set ListView Adapter
-        lv.setAdapter(adapter);
-        onBtnClick();
-
-
-    }
-
-    public void onBtnClick(){
-        bt.setOnClickListener(new View.OnClickListener() {
+        btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = et1.getText().toString().trim();
-                String number = et2.getText().toString().trim();
-                arrayList.add(name);
-                arrayList.add(number);
-                adapter.notifyDataSetChanged();
+                String newEntry = editText.getText().toString();
+                if(editText.length()!= 0){
+                    AddData(newEntry);
+                    editText.setText("");
+                }else{
+                    Toast.makeText(AddRelative.this, "You must put something in the text field!", Toast.LENGTH_LONG).show();
+                }
             }
         });
+
+        btnView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddRelative.this, ViewListContents.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
-//    public void addThem(View v){
-//        String name = et1.getText().toString().trim();
-//        String number = et2.getText().toString().trim();
-//        adapter.notifyDataSetChanged();
-//    }
+    public void AddData(String newEntry) {
+
+        boolean insertData = myDB.addData(newEntry);
+
+        if(insertData==true){
+            Toast.makeText(this, "Data Successfully Inserted!", Toast.LENGTH_LONG).show();
+        }else{
+            Toast.makeText(this, "Something went wrong :(.", Toast.LENGTH_LONG).show();
+        }
+    }
 }
+
