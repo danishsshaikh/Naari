@@ -13,10 +13,10 @@ It is easy to use because of it's user friendly UI.
 
 ## :iphone: Salient Features:
 
-### :telephone_receiver: Trigger Button -
+#### :telephone_receiver: Trigger Button -
 Press the volume up/down button for 5 seconds, this will send a message along with the location and a call to the registered mobile numbers.
 
-### :telephone: Helpline Numbers - 
+#### :telephone: Helpline Numbers - 
 One-click access to helpline numbers like Women in distress, Domestic abuse, Police, student/child helpline, Ambulance.
 
 </br>
