@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     int count = 0;
@@ -17,9 +19,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        Bundle extras = getIntent().getExtras();
+//        String V1 = extras.getString(Intent.EXTRA_TEXT);
+//        Log.d("NumberMainActivity", V1);
     }
 
-//    public void myProfile(View v){
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        Bundle extras = getIntent().getExtras();
+        String V1 = extras.getString(Intent.EXTRA_TEXT);
+        Log.d("NumberMainActivity", V1);
+    }
+
+    //    public void myProfile(View v){
 //        Intent i = new Intent(getApplicationContext(), MyProfile.class);
 //        startActivity(i);
 //    }
@@ -60,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
         switch (keycode)
         {
-
             case KeyEvent.KEYCODE_VOLUME_UP:
                 {
                 if(KeyEvent.ACTION_UP == action){
@@ -69,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("upButton", S1);
                 }
             }
-
             case KeyEvent.KEYCODE_VOLUME_DOWN:
                 if(KeyEvent.ACTION_DOWN == action){
                     count = 0;
@@ -79,4 +90,9 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.dispatchKeyEvent(event);
     }
+
+
+
+
+
 }
