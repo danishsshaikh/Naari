@@ -68,31 +68,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean dispatchKeyEvent(KeyEvent event) {
-
-        int action, keycode;
-
-        action = event.getAction();
-        keycode = event.getKeyCode();
-
-        switch (keycode)
-        {
-            case KeyEvent.KEYCODE_VOLUME_UP:
-                {
-                if(KeyEvent.ACTION_UP == action){
-                    count++;
-                    String S1 = String.valueOf(count);
-                    Log.d("upButton", S1);
-                }
-            }
-            case KeyEvent.KEYCODE_VOLUME_DOWN:
-                if(KeyEvent.ACTION_DOWN == action){
-                    count = 0;
-                    String S2 = String.valueOf(count);
-                    Log.d("downButton", S2);
-                }
-        }
-        return super.dispatchKeyEvent(event);
-    }
+//    @Override
+//    public boolean dispatchKeyEvent(KeyEvent event) {
+//
+//        int action, keycode;
+//
+//        action = event.getAction();
+//        keycode = event.getKeyCode();
+//
+//        switch (keycode)
+//        {
+//            case KeyEvent.KEYCODE_VOLUME_UP:
+//                {
+//                if(KeyEvent.ACTION_UP == action){
+//                    count++;
+//                    String S1 = String.valueOf(count);
+//                    Log.d("upButton", S1);
+//                }
+//            }
+//            case KeyEvent.KEYCODE_VOLUME_DOWN:
+//                if(KeyEvent.ACTION_DOWN == action){
+//                    count = 0;
+//                    String S2 = String.valueOf(count);
+//                    Log.d("downButton", S2);
+//                }
+//        }
+//        return super.dispatchKeyEvent(event);
+//    }
 }
