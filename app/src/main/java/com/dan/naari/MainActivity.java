@@ -95,9 +95,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.dispatchKeyEvent(event);
     }
-
-
-
-
-
 }
