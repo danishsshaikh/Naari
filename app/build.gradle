@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 29
@@ -35,5 +36,6 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'com.android.support:cardview-v7:23.3.0'
     implementation 'com.github.msayan:tutorial-view:v1.0.10'
+    implementation 'com.google.firebase:firebase-auth:18.1.0'
 
 }

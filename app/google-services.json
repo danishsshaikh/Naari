@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "438750279733",
+    "firebase_url": "https://naari-4724e.firebaseio.com",
+    "project_id": "naari-4724e",
+    "storage_bucket": "naari-4724e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438750279733:android:f70171fb8ea9e3c913197c",
+        "android_client_info": {
+          "package_name": "com.dan.naari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438750279733-9hc7u0u5s7jrkg8cl0u6s9tn2i358hlk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASvMlCteSrgMr1TP1vAl9gGbyAK95o8uM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438750279733-9hc7u0u5s7jrkg8cl0u6s9tn2i358hlk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
