@@ -37,6 +37,7 @@ public class AddRelative extends AppCompatActivity {
         lv.setAdapter(adapter);
         onBtnClick();
 
+
     }
 
     public void onBtnClick(){
@@ -45,8 +46,16 @@ public class AddRelative extends AppCompatActivity {
             public void onClick(View v) {
                 String name = et1.getText().toString().trim();
                 String number = et2.getText().toString().trim();
+                arrayList.add(name);
+                arrayList.add(number);
                 adapter.notifyDataSetChanged();
             }
         });
     }
+
+//    public void addThem(View v){
+//        String name = et1.getText().toString().trim();
+//        String number = et2.getText().toString().trim();
+//        adapter.notifyDataSetChanged();
+//    }
 }
