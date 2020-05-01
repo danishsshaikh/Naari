@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DeveloperByActivity"></activity>
+        <activity android:name=".HowToSwipe"></activity>
+        <activity android:name=".DeveloperByActivity" />
         <activity android:name=".TrigActivity" />
         <activity android:name=".helplineCall" />
         <activity android:name=".AddRelative" />
