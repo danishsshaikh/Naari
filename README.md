@@ -6,8 +6,9 @@ Naari Rakshak is an android app, a women safety app that allows the user to crea
 The app is about safety/awareness & makes the user safe & confident. 
 It is easy to use because of it's user friendly UI.
 
+> Demo Application - [Video Uploading - Very Sorry!]()
 
-## :iphone: Sailent Features:
+## :iphone: Salient Features:
 
 ### :telephone_receiver: Trigger Button -
 Press the volume up/down button for 5 seconds, this will send a message along with the location and a call to the registered mobile numbers.
