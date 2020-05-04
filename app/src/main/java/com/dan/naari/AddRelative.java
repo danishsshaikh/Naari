@@ -91,12 +91,12 @@ public class AddRelative extends AppCompatActivity {
                     //String S1 = String.valueOf(count);
                     //Log.d("upButton", S1);
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
-                    callIntent.setData(Uri.parse("tel:9137485752"));
+                    callIntent.setData(Uri.parse("tel:"));
                     if (ActivityCompat.checkSelfPermission(AddRelative.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                         ActivityCompat.requestPermissions(AddRelative.this, new String[]{Manifest.permission.CALL_PHONE}, REQUEST_CALL);
 
                     } else {
-                        callIntent.setData(Uri.parse("tel: 9137485752"));
+                        callIntent.setData(Uri.parse("tel:"));
                         startActivity(callIntent);
                     }
                     startActivity(callIntent);
@@ -108,12 +108,12 @@ public class AddRelative extends AppCompatActivity {
                     //String S2 = String.valueOf(count);
                     //Log.d("downButton", S2);
                     Intent callIntent = new Intent(Intent.ACTION_CALL);
-                    callIntent.setData(Uri.parse("tel:9137485752"));
+                    callIntent.setData(Uri.parse("tel:"));
                     if (ActivityCompat.checkSelfPermission(AddRelative.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                         ActivityCompat.requestPermissions(AddRelative.this, new String[]{Manifest.permission.CALL_PHONE}, REQUEST_CALL);
 
                     } else {
-                        callIntent.setData(Uri.parse("tel: 9137485752"));
+                        callIntent.setData(Uri.parse("tel:"));
                         startActivity(callIntent);
                     }
                     startActivity(callIntent);
