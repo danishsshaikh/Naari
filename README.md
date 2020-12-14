@@ -7,7 +7,6 @@ Naari Rakshak is an android app, a women safety app that allows the user to crea
 The app is about safety/awareness & makes the user safe & confident. 
 It is easy to use because of it's user friendly UI.
 
-> Demo Application - [Google Drive Link](https://drive.google.com/file/d/1SD7LB8rClTEWmeKbP7v_g_DAxApHf20L/view)
 
 </br>
 
@@ -21,9 +20,6 @@ One-click access to helpline numbers like Women in distress, Domestic abuse, Pol
 
 </br>
 
-## :hourglass: Event:
-A project based on the Problem Statement given by Hack4Good. 
-A college based Hackathon.
 
 </br>
 
@@ -42,7 +38,6 @@ A message will be sent along with the live location and the family member with t
 - Java
 - SQLite
 - Firebase
-- Google Analytics
 
 </br>
 
